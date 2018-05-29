@@ -1,0 +1,41 @@
+$main: darkgray
+$secondary: #8b8b9f
+$highlight: darkgreen
+
+*
+    box-sizing: border-box
+
+html, body
+    height: 100%
+    margin: 0
+
+body
+    font-family: 'Open Sans', sans-serif
+
+.wrapper
+    width: 1440px //wtf?
+    max-width: 90%
+    margin: auto
+    display: flex
+
+h1,h2,h3
+    font-weight: 300
+
+.main_header
+    padding: 1.5em 0
+.logo
+    font-weight: 900
+    font-size: 1.15em // why
+    text-transform: uppercase
+    span
+        font-weight: 300
+        color: $highlight
+
+.main_nav
+    font-size: .9em  // why
+    margin-left: auto
+    padding-top: 1em // why
+    a
+        margin-left: 1em
+        color: $secondary
+        text-decoration: none

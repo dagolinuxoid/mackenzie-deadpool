@@ -1,0 +1,15 @@
+{
+  "name": "dago",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "t1": "pug -w index.pug -o . -P",
+    "t2": "node-sass -w sass/styles.sass -o css",
+    "t3": "browser-sync -w -f='index.html' --no-open",
+    "dev": "npm-run-all --parallel t*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
