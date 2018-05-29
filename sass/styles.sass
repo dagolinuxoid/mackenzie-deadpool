@@ -1,6 +1,7 @@
 $main: darkgray
 $secondary: #8b8b9f
 $highlight: darkgreen
+$white: #fff
 
 *
     box-sizing: border-box
@@ -54,8 +55,42 @@ h1,h2,h3
         width: 275px
         position: relative
         .featured_image
-            // width: 100%
+            width: 100%
             max-width: 100%
+            border-radius: .5em // why not px
         .play_button
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            color: $white
+            box-shadow: 2px 2px 15px
+            padding: 8px 12px
+
     &__content
-        width: 40%
+        width: 400px
+        margin-left: 100px
+        .title
+            font-size: 1.75em
+            color: $white
+            display: inline
+        .ratings
+            display: inline
+            margin-left: 1em 
+            i
+                color: $highlight
+                font-size: 1.35em
+                margin: 0 .15em
+            .inactive
+                color: #48494d
+        .description
+            color: #bbbebf
+            font-size: 1em
+            line-height: 2
+        .info
+            color: $white
+            font-size: .8em
+            font-weight: 700
+            margin-top: 3em
+            span
+                margin: 0 .5em
