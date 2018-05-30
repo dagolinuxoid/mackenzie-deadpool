@@ -20,12 +20,16 @@ body
     display: flex
     justify-content: space-between
     align-items: center
+    flex-wrap: wrap
 
 h1,h2,h3
     font-weight: 300
 
 .main_header
     padding: 1.5em 0
+    .menu
+        font-size: 1.3em
+        color: $main
 .logo
     font-weight: 900
     font-size: 1.15em // why
@@ -35,7 +39,15 @@ h1,h2,h3
         color: $highlight
 
 .main_nav
+    display: none
     font-size: .9em  // why
+    &.active
+        display: flex
+        width: 100%
+        flex-flow: column
+        align-items: center
+        justify-content: space-between
+        height: 150px
     a
         margin-left: 1em
         color: $secondary
@@ -66,7 +78,6 @@ h1,h2,h3
             color: $white
             box-shadow: 2px 2px 15px
             padding: 8px 12px
-
     &__content
         width: 400px
         margin-left: 100px
@@ -177,3 +188,12 @@ h1,h2,h3
             margin: 0 .5em
             &:hover
                 color: $highlight
+
+// Media
+
+@media only screen and (min-width: 768px)
+    .main_nav
+        display: block
+    .main_header
+        .menu
+            display: none
