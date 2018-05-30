@@ -5,4 +5,6 @@ window.onload = () => {
         e.stopPropagation();
         main_nav.classList.toggle('active');
     });
+    document.addEventListener('click', () => 
+        main_nav.classList.remove('active'));
 }

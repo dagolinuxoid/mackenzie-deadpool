@@ -26,7 +26,7 @@ h1,h2,h3
     font-weight: 300
 
 .main_header
-    padding: 1.5em 0
+    padding: 0
     .menu
         font-size: 1.3em
         color: $main
@@ -46,7 +46,7 @@ h1,h2,h3
         width: 100%
         flex-flow: column
         align-items: center
-        justify-content: space-between
+        justify-content: space-around
         height: 150px
     a
         margin-left: 1em
@@ -58,18 +58,18 @@ h1,h2,h3
     background-image: url('../images/banner_background.jpg') // know your paths!
     background-size: cover
     background-repeat: no-repeat
-    padding: 6em 0
+    padding: 3em 0
     &__wrapper
         display: flex
         justify-content: center
         align-items: center
     &__poster
-        width: 275px
+        max-width: 170px
         position: relative
         .featured_image
             width: 100%
             max-width: 100%
-            border-radius: .5em // why not px
+            border-radius: .5em
         .play_button
             position: absolute
             top: 50%
@@ -80,7 +80,7 @@ h1,h2,h3
             padding: 8px 12px
     &__content
         width: 400px
-        margin-left: 100px
+        margin-left: 50px 
         .title
             font-size: 1.75em
             color: $white
@@ -195,5 +195,18 @@ h1,h2,h3
     .main_nav
         display: block
     .main_header
+        padding: 1em 0
         .menu
             display: none
+    .banner
+        padding: 6em 0
+        &__wrapper
+            display: flex
+            justify-content: center
+            align-items: center
+        &__poster
+            max-width: 275px
+            position: relative
+        &__content
+            width: 600px
+            margin-left: 100px 
